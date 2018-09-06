@@ -1,0 +1,11 @@
+com/aisera/service/impl/MedianNumberOfFriends.class
+com/aisera/service/impl/MeanOfBalances.class
+com/aisera/service/impl/SummarizerImpl.class
+com/aisera/service/impl/MedianOfAges.class
+com/aisera/entities/Friend.class
+com/aisera/service/Query.class
+com/aisera/service/impl/UserRegisteredPerYear.class
+com/aisera/service/Summarizer.class
+com/aisera/ParserApplication.class
+com/aisera/service/impl/MeanOfMessages.class
+com/aisera/entities/User.class

@@ -10,7 +10,7 @@ import com.aisera.service.Query;
 public class MeanOfBalances implements Query {
 	@Override
 	public String processUsers(List<User> users) {
-		BigDecimal balanceMean = users.stream().map(u -> u.getBalanceAmount()).reduce(BigDecimal.ZERO, BigDecimal::add)
+		BigDecimal balanceMean = users.parallelStream().map(u -> u.getBalanceAmount()).reduce(BigDecimal.ZERO, BigDecimal::add)
 				.divide(new BigDecimal(users.size()), RoundingMode.UP);
 		return "\nMean Balance Amount --> " + balanceMean ;
 	}
